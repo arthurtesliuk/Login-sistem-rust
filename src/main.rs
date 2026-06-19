@@ -98,7 +98,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // loop principal do menu
     loop {
-        write("\nqual sua escola?\n1. registrar\n2. logar\n3. sair\n4. deletar usuario\n> ", 30); // menu com a nova opcao
+        write("\nqual sua escolha?\n1. registrar\n2. logar\n3. deletar usuario\n4. sair\n> ", 30); // menu com a nova opcao
         let mut choice = String::new();
         input(&mut choice);
         let choice = choice.trim();
@@ -148,7 +148,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 }
             }
 
-            "4" => { // deletar usuario
+            "3" => { // deletar usuario
                 let username = prompt_trim("digite o nome do usuario a ser deletado:\n");
                 // confirmacao simples antes de deletar
                 write(&format!("voce tem certeza que quer deletar o usuario '{}'? (s/n)\n", username), 10);
@@ -166,7 +166,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 }
             }
 
-            "3" => { // sair
+            "4" => { // sair
                 write("saindo...\n", 30);
                 break;
             }
