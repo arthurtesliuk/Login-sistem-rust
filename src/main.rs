@@ -1,3 +1,9 @@
+// ################ cabecalho ############## //
+// feito por Arthurtesliuk 
+// ultima vez alterado 19/06 as 17:05 
+// favor caso altere trocar data e adicionar seu nome
+// ######################################### //
+
 use argon2::{Argon2, PasswordHasher, PasswordVerifier, password_hash::{SaltString, rand_core::OsRng, PasswordHash}}; // para gerar e verificar hash de senha (argon2)
 use std::io; // para entrada padrao
 use rpassword::read_password; // para ler senha sem eco no terminal
